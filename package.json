@@ -1,0 +1,30 @@
+{
+  "name": "starter-template",
+  "version": "0.0.1",
+  "description": "A simple template for static websites with gulp, stylus and pug.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rromanv/starter-template.git"
+  },
+  "author": "rromanv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rromanv/starter-template/issues"
+  },
+  "homepage": "https://github.com/rromanv/starter-template#readme",
+  "keywords": [
+    "gulp",
+    "pug",
+    "stylus",
+    "starter",
+    "template"
+  ]
+}
