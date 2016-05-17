@@ -1,9 +1,10 @@
-var gulp        = require('gulp');
-var pug         = require('gulp-pug');
-var stylus      = require('gulp-stylus');
-var sourcemaps  = require('gulp-sourcemaps');
-var concat      = require('gulp-concat');
-var browserSync = require('browser-sync').create();
+var gulp         = require('gulp');
+var pug          = require('gulp-pug');
+var stylus       = require('gulp-stylus');
+var sourcemaps   = require('gulp-sourcemaps');
+var concat       = require('gulp-concat');
+var browserSync  = require('browser-sync').create();
+var autoprefixer = require('autoprefixer-stylus');
 
 
  
@@ -19,7 +20,9 @@ gulp.task('pug', function() {
 gulp.task('stylus', function () {
   return gulp.src('./styl/[^_]*.styl')
     .pipe(sourcemaps.init())
-    .pipe(stylus())
+    .pipe(stylus({
+        use: [autoprefixer('iOS >= 7', 'last 1 Chrome version')]
+      }))
     .pipe(concat('style.css'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/css/'))

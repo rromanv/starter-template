@@ -23,3 +23,4 @@ Credits
 
 * Inspired by [Roots](http://roots.cx) (but a lot more simple).
 * Adapted gulp file based in [Paul Salaets post](http://paulsalaets.com/posts/injecting-styles-in-page-with-browser-sync).
+* Autoprefixer adaptation from [ayapi](https://gist.github.com/ayapi/26d299e4a61d9ac66036)
