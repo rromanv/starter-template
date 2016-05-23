@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "description": "A simple template for static websites with gulp, stylus and pug.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "coffee-script": "^1.10.0"
+  },
   "devDependencies": {
     "autoprefixer-stylus": "^0.9.3",
     "browser-sync": "^2.12.8",
+    "coffee-script": "^1.10.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-pug": "^3.0.2",
